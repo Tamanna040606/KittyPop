@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #f1eaff, #e8f5ff);
+    min-height: 100vh;
+    color: #44334f;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #b46ac9;
+}
+
+header p {
+    color: #8c759b;
+    font-size: 15px;
+}
+
+/* Main Section */
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.cat-container {
+    text-align: center;
+}
+
+.cat-container h2,
+.favorites-section h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* Cat Card */
+
+.cat-card {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(150, 100, 170, 0.15);
+}
+
+#catImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    padding: 12px 17px;
+    border-radius: 12px;
+    background: #eac8f5;
+    color: #623d75;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #c98cde;
+    color: white;
+    transform: translateY(-3px);
+}
+
+#message {
+    margin: 20px;
+    color: #8c759b;
+}
+
+/* Favourites */
+
+.favorites-section {
+    margin-top: 65px;
+    text-align: center;
+}
+
+#favoritesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.favorite-cat {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(150, 100, 170, 0.15);
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    color: #947ca0;
+    font-size: 13px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 34px;
+    }
+
+    .cat-container h2 {
+        font-size: 20px;
+    }
+
+    #catImage {
+        height: 250px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
